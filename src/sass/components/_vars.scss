@@ -1,0 +1,30 @@
+$main_font: "Roboto", sans-serif;
+$secondary_font: "Gilroy", cursive;
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic");
+
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai");
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Light.otf");
+  src: url("../fonts/Gilroy-ExtraBold.otf");
+}
+
+$blue_gray: #253746;
+$jungle_green: #27a096;
+$eminence: #6e2880;
+$fire-bush: #df9034;
+$san-felix: #216a0c;
+
+$primary_clr: $blue_gray;
+$secondary_clr: $jungle_green;
+$tertiary_clr: $eminence;
+$h_clr: $fire-bush;
+$link_clr: $san-felix;
+
+$show-image: true;
+$background-opacity: 0.8;
+$home-image: url(../images/success-bkg-min.jpg);
+$about-image: url(../images/about-underconstruction-min.jpg);
+$contact-image: url(../images/contact-bg-min.jpg);
