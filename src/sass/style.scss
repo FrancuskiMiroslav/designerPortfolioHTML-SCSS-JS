@@ -7,6 +7,10 @@
 
 @include main;
 
+#work-img {
+  @include background($work-image);
+}
+
 header {
   min-height: 60px;
   background-color: $primary_clr;
@@ -218,7 +222,7 @@ header {
       }
 
       .logo-top {
-        line-height: 50px;
+        line-height: 10px;
         transition: all 0.5s ease-in-out;
       }
 
@@ -305,7 +309,7 @@ main {
     width: 25%;
     @include media-max-width(600) {
       display: flex;
-      min-height: 30px;
+      min-height: 60px;
       width: 100%;
     }
 
@@ -321,6 +325,7 @@ main {
         display: flex;
         line-height: 30px;
         width: 100%;
+        flex-wrap: wrap;
         left: 0;
         justify-content: space-between;
       }
@@ -332,7 +337,7 @@ main {
       border-radius: 5px 0 0 5px;
       padding: 0 10px;
       @include media-max-width(600) {
-        width: 100%;
+        width: 25%;
         text-align: center;
         border-radius: 0;
       }
@@ -360,6 +365,7 @@ main {
       width: 400px;
       position: relative;
       overflow: hidden;
+      @include hover-border;
       @include media-max-width(800) {
         width: 100%;
       }
@@ -401,6 +407,7 @@ main {
         justify-content: center;
         transform: scaleY(0);
         transition: transform 0.5s;
+        z-index: 5;
       }
 
       &--content {
