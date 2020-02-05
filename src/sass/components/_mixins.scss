@@ -43,7 +43,6 @@
 }
 
 @mixin hover-border {
-  cursor: pointer;
   position: relative;
   z-index: -88;
   &:after,

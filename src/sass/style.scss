@@ -313,7 +313,7 @@ main {
       width: 100%;
     }
 
-    ul {
+    &__list {
       position: fixed;
       left: 5%;
       width: 17.7%;
@@ -323,32 +323,52 @@ main {
       }
       @include media-max-width(600) {
         display: flex;
-        line-height: 30px;
+        line-height: 20px;
         width: 100%;
         flex-wrap: wrap;
         left: 0;
         justify-content: space-between;
       }
+
+      hr {
+        background-color: rgba($color: $primary_clr, $alpha: 0.4);
+        border: 3px dashed $secondary_clr;
+        @include media-max-width(600) {
+          display: none;
+        }
+      }
+
+      li {
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        border-radius: 5px 0 0 5px;
+        padding: 0 10px;
+        @include media-max-width(600) {
+          width: 25%;
+          text-align: center;
+          border-radius: 0;
+        }
+        &:hover {
+          background: rgba(darken($color: $secondary_clr, $amount: 8), 0.9);
+          color: $h_clr;
+        }
+
+        &.active {
+          background: $secondary_clr;
+        }
+      }
     }
 
-    li {
-      cursor: pointer;
-      transition: all 0.5s ease-in-out;
-      border-radius: 5px 0 0 5px;
-      padding: 0 10px;
-      @include media-max-width(600) {
-        width: 25%;
-        text-align: center;
-        border-radius: 0;
-      }
-      &:hover {
-        background: $secondary_clr;
-        color: $primary_clr;
-      }
+    .primary_clr {
+      background: rgba($color: $primary_clr, $alpha: 0.8);
+    }
 
-      &.active {
-        background: $secondary_clr;
-      }
+    .secondary_clr {
+      background: rgba($color: $secondary_clr, $alpha: 0.8);
+    }
+
+    .tertiary_clr {
+      background: rgba($color: $tertiary_clr, $alpha: 0.8);
     }
   }
 
@@ -408,6 +428,9 @@ main {
         transform: scaleY(0);
         transition: transform 0.5s;
         z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       &--content {
