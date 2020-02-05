@@ -854,23 +854,24 @@ main .portfolio-menu__list {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    min-height: 60px;
   }
 }
 
-/* line 333, src/sass/style.scss */
+/* line 334, src/sass/style.scss */
 main .portfolio-menu__list hr {
   background-color: rgba(37, 55, 70, 0.4);
   border: 3px dashed #27a096;
 }
 
 @media (max-width: 600px) {
-  /* line 333, src/sass/style.scss */
+  /* line 334, src/sass/style.scss */
   main .portfolio-menu__list hr {
     display: none;
   }
 }
 
-/* line 341, src/sass/style.scss */
+/* line 342, src/sass/style.scss */
 main .portfolio-menu__list li {
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
@@ -880,40 +881,41 @@ main .portfolio-menu__list li {
 }
 
 @media (max-width: 600px) {
-  /* line 341, src/sass/style.scss */
+  /* line 342, src/sass/style.scss */
   main .portfolio-menu__list li {
     width: 25%;
     text-align: center;
     border-radius: 0;
+    font-size: 12px;
   }
 }
 
-/* line 351, src/sass/style.scss */
+/* line 353, src/sass/style.scss */
 main .portfolio-menu__list li:hover {
   background: rgba(202, 124, 32, 0.7);
 }
 
-/* line 355, src/sass/style.scss */
+/* line 357, src/sass/style.scss */
 main .portfolio-menu__list li.active {
   background: rgba(223, 144, 52, 0.7);
 }
 
-/* line 361, src/sass/style.scss */
+/* line 363, src/sass/style.scss */
 main .portfolio-menu .primary_clr {
   background: rgba(37, 55, 70, 0.8);
 }
 
-/* line 365, src/sass/style.scss */
+/* line 367, src/sass/style.scss */
 main .portfolio-menu .secondary_clr {
   background: rgba(39, 160, 150, 0.8);
 }
 
-/* line 369, src/sass/style.scss */
+/* line 371, src/sass/style.scss */
 main .portfolio-menu .tertiary_clr {
   background: rgba(110, 40, 128, 0.8);
 }
 
-/* line 374, src/sass/style.scss */
+/* line 376, src/sass/style.scss */
 main .boxes {
   z-index: 25;
   text-align: center;
@@ -921,13 +923,13 @@ main .boxes {
 }
 
 @media (max-width: 800px) {
-  /* line 374, src/sass/style.scss */
+  /* line 376, src/sass/style.scss */
   main .boxes {
     width: 100%;
   }
 }
 
-/* line 382, src/sass/style.scss */
+/* line 384, src/sass/style.scss */
 main .boxes__box {
   height: 500px;
   width: 400px;
@@ -979,13 +981,13 @@ main .boxes__box:hover:before, main .boxes__box:hover:after {
 }
 
 @media (max-width: 800px) {
-  /* line 382, src/sass/style.scss */
+  /* line 384, src/sass/style.scss */
   main .boxes__box {
     width: 100%;
   }
 }
 
-/* line 392, src/sass/style.scss */
+/* line 394, src/sass/style.scss */
 main .boxes__box--img {
   position: relative;
   width: 100%;
@@ -993,7 +995,7 @@ main .boxes__box--img {
   z-index: -5;
 }
 
-/* line 397, src/sass/style.scss */
+/* line 399, src/sass/style.scss */
 main .boxes__box--img img {
   width: 100%;
   height: 100%;
@@ -1001,7 +1003,7 @@ main .boxes__box--img img {
   transition: 1.5s;
 }
 
-/* line 406, src/sass/style.scss */
+/* line 408, src/sass/style.scss */
 main .boxes__box:hover .boxes__box--img img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -1009,13 +1011,13 @@ main .boxes__box:hover .boxes__box--img img {
           filter: grayscale(100%);
 }
 
-/* line 412, src/sass/style.scss */
+/* line 414, src/sass/style.scss */
 main .boxes__box:hover .boxes__box--overlay {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
 }
 
-/* line 417, src/sass/style.scss */
+/* line 419, src/sass/style.scss */
 main .boxes__box--overlay {
   height: 90%;
   width: 90%;
@@ -1048,35 +1050,35 @@ main .boxes__box--overlay {
           align-items: center;
 }
 
-/* line 435, src/sass/style.scss */
+/* line 437, src/sass/style.scss */
 main .boxes__box--content {
   position: absolute;
   padding: 15px;
   color: white;
 }
 
-/* line 440, src/sass/style.scss */
+/* line 442, src/sass/style.scss */
 main .boxes__box--content h2 {
   margin-bottom: 20px;
   color: #df9034;
 }
 
-/* line 446, src/sass/style.scss */
+/* line 448, src/sass/style.scss */
 main .boxes__box--primary_clr {
   background: rgba(37, 55, 70, 0.9);
 }
 
-/* line 450, src/sass/style.scss */
+/* line 452, src/sass/style.scss */
 main .boxes__box--secondary_clr {
   background: rgba(39, 160, 150, 0.9);
 }
 
-/* line 454, src/sass/style.scss */
+/* line 456, src/sass/style.scss */
 main .boxes__box--tertiary_clr {
   background: rgba(110, 40, 128, 0.9);
 }
 
-/* line 461, src/sass/style.scss */
+/* line 463, src/sass/style.scss */
 footer {
   background-color: #253746;
   display: -webkit-box;
@@ -1093,7 +1095,7 @@ footer {
 }
 
 @media (max-width: 800px) {
-  /* line 461, src/sass/style.scss */
+  /* line 463, src/sass/style.scss */
   footer {
     display: block;
     text-align: center;
@@ -1101,7 +1103,7 @@ footer {
   }
 }
 
-/* line 474, src/sass/style.scss */
+/* line 476, src/sass/style.scss */
 footer .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1112,23 +1114,23 @@ footer .social-icons {
 }
 
 @media (max-width: 800px) {
-  /* line 474, src/sass/style.scss */
+  /* line 476, src/sass/style.scss */
   footer .social-icons {
     display: block;
     margin-bottom: 25px;
   }
-  /* line 481, src/sass/style.scss */
+  /* line 483, src/sass/style.scss */
   footer .social-icons p {
     margin-bottom: 25px;
   }
 }
 
-/* line 486, src/sass/style.scss */
+/* line 488, src/sass/style.scss */
 footer .social-icons > * {
   margin-right: 15px;
 }
 
-/* line 490, src/sass/style.scss */
+/* line 492, src/sass/style.scss */
 footer .social-icons .icon {
   padding: 5px;
   background: #27a096;
@@ -1137,23 +1139,23 @@ footer .social-icons .icon {
   font-size: 25px;
 }
 
-/* line 496, src/sass/style.scss */
+/* line 498, src/sass/style.scss */
 footer .social-icons .icon:hover {
   color: #df9034;
   background: #253746;
 }
 
-/* line 502, src/sass/style.scss */
+/* line 504, src/sass/style.scss */
 footer .copyright {
   font-size: 10px;
 }
 
-/* line 505, src/sass/style.scss */
+/* line 507, src/sass/style.scss */
 footer .copyright__author {
   color: #27a096;
 }
 
-/* line 507, src/sass/style.scss */
+/* line 509, src/sass/style.scss */
 footer .copyright__author:hover {
   color: #df9034;
 }

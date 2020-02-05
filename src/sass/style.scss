@@ -328,6 +328,7 @@ main {
         flex-wrap: wrap;
         left: 0;
         justify-content: space-between;
+        min-height: 60px;
       }
 
       hr {
@@ -347,6 +348,7 @@ main {
           width: 25%;
           text-align: center;
           border-radius: 0;
+          font-size: 12px;
         }
         &:hover {
           background: rgba(darken($color: $h_clr, $amount: 8), 0.7);
