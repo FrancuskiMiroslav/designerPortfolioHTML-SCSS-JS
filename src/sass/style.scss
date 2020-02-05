@@ -349,12 +349,11 @@ main {
           border-radius: 0;
         }
         &:hover {
-          background: rgba(darken($color: $secondary_clr, $amount: 8), 0.9);
-          color: $h_clr;
+          background: rgba(darken($color: $h_clr, $amount: 8), 0.7);
         }
 
         &.active {
-          background: $secondary_clr;
+          background: rgba($h_clr, 0.7);
         }
       }
     }
