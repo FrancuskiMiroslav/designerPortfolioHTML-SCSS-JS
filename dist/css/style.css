@@ -1,4 +1,5 @@
 /*! project-name v0.0.1 | (c) 2020 Francuski Miroslav | MIT License | http://link-to-your-git-repo.com */
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=Baloo+Bhai");
 @font-face {
@@ -92,6 +93,10 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  display: block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 /* line 88, src/sass/components/_mixins.scss */
@@ -106,7 +111,7 @@
   z-index: -100;
 }
 
-/* line 5, src/sass/pages/_about.scss */
+/* line 7, src/sass/pages/_about.scss */
 .about {
   padding: 5% 12%;
   display: -webkit-box;
@@ -121,7 +126,7 @@
   height: 100%;
 }
 
-/* line 12, src/sass/pages/_about.scss */
+/* line 14, src/sass/pages/_about.scss */
 .about__content {
   height: 100%;
   width: 100%;
@@ -129,35 +134,279 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  position: relative;
+}
+
+/* line 22, src/sass/pages/_about.scss */
+.about__heading {
+  top: -0.6em;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-/* line 21, src/sass/pages/_about.scss */
-.about__content--btn {
-  border: 1px solid #df9034;
-  color: #fff;
-  padding: 10px 20px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 30px auto;
-  cursor: pointer;
-  font-size: 16px;
-  background-color: #253746;
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #27a096;
 }
 
-/* line 154, src/sass/components/_mixins.scss */
-.about__content--btn:hover {
-  background-color: #df9034;
+/* line 34, src/sass/pages/_about.scss */
+.about__heading:before, .about__heading:after {
+  content: "";
+  border-top: 4px solid;
+  margin: 0 20px 0 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 20px;
+          flex: 1 0 20px;
+  -webkit-animation-name: sideLine;
+          animation-name: sideLine;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  color: #27a096;
+}
+
+/* line 45, src/sass/pages/_about.scss */
+.about__heading:after {
+  margin: 0 0 0 20px;
+}
+
+@-webkit-keyframes sideLine {
+  0% {
+    -webkit-box-flex: 0;
+            flex: 0;
+  }
+  100% {
+    -webkit-box-flex: 1;
+            flex: 1 0 20px;
+  }
+}
+
+@keyframes sideLine {
+  0% {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+  100% {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 20px;
+            flex: 1 0 20px;
+  }
+}
+
+/* line 60, src/sass/pages/_about.scss */
+.about__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 750px) {
+  /* line 60, src/sass/pages/_about.scss */
+  .about__boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 72, src/sass/pages/_about.scss */
+.about__aside {
+  max-width: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+@media (max-width: 750px) {
+  /* line 72, src/sass/pages/_about.scss */
+  .about__aside {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+/* line 82, src/sass/pages/_about.scss */
+.about__aside--img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-bottom: 15px;
+}
+
+/* line 85, src/sass/pages/_about.scss */
+.about__aside--img img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-filter: drop-shadow(2px 4px 6px black) brightness(0.5);
+          filter: drop-shadow(2px 4px 6px black) brightness(0.5);
+}
+
+/* line 93, src/sass/pages/_about.scss */
+.about__aside--content ul {
+  border: 3px solid #27a096;
+  padding: 10px 20px;
+  list-style-type: square;
+}
+
+/* line 101, src/sass/pages/_about.scss */
+.about__section {
+  width: 65%;
+  padding: 15px;
+}
+
+@media (max-width: 750px) {
+  /* line 101, src/sass/pages/_about.scss */
+  .about__section {
+    width: 100%;
+  }
+}
+
+/* line 108, src/sass/pages/_about.scss */
+.about__section--top {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 750px) {
+  /* line 108, src/sass/pages/_about.scss */
+  .about__section--top {
+    text-align: center;
+  }
+}
+
+/* line 114, src/sass/pages/_about.scss */
+.about__section--top h2 {
+  color: #228b83;
+  margin-bottom: 15px;
+}
+
+/* line 119, src/sass/pages/_about.scss */
+.about__section--top h3 {
+  color: #1f7f77;
+  margin-bottom: 10px;
+}
+
+/* line 126, src/sass/pages/_about.scss */
+.about__section--middle h2 {
+  color: #228b83;
+  border-bottom: 5px solid #228b83;
+}
+
+/* line 130, src/sass/pages/_about.scss */
+.about__section--middle .skillbar {
+  position: relative;
+  display: inline-block;
+  margin: 15px 0;
+  width: 100%;
+  background: rgba(43, 176, 165, 0.2);
+  height: 35px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+/* line 141, src/sass/pages/_about.scss */
+.about__section--middle .skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #2bb0a5;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: rgba(37, 55, 70, 0.6);
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+}
+
+/* line 157, src/sass/pages/_about.scss */
+.about__section--middle .skillbar-bar {
+  height: 35px;
+  width: 0px;
+  background: #239087;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* line 165, src/sass/pages/_about.scss */
+.about__section--middle .skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+/* line 177, src/sass/pages/_about.scss */
+.about__section--bottom h2 {
+  color: #228b83;
+  border-bottom: 5px solid #228b83;
+  margin-bottom: 15px;
+}
+
+/* line 183, src/sass/pages/_about.scss */
+.about__section--bottom span {
+  font-size: 30px;
+  color: #27a096;
+  vertical-align: middle;
+}
+
+/* line 189, src/sass/pages/_about.scss */
+.about__section--bottom blockquote {
+  background: rgba(34, 139, 131, 0.5);
+  border-left: 10px solid #27a096;
+  margin: 1.5em 0px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’";
+  line-height: 50px;
+}
+
+/* line 199, src/sass/pages/_about.scss */
+.about__section--bottom blockquote:before {
+  color: #27a096;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.4em;
+  margin-right: 0.15em;
+  vertical-align: -0.4em;
+}
+
+/* line 208, src/sass/pages/_about.scss */
+.about__section--bottom blockquote:after {
+  color: #27a096;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.6em;
+  margin-left: 0.15em;
+  vertical-align: -0.4em;
+}
+
+/* line 216, src/sass/pages/_about.scss */
+.about__section--bottom blockquote p {
+  display: inline;
 }
 
 /* line 1, src/sass/pages/_contact.scss */
