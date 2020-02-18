@@ -30,6 +30,9 @@
     text-transform: uppercase;
     font-size: 48px;
     color: $secondary_clr;
+    @include media-max-width(500) {
+      font-size: 32px;
+    }
 
     &:before,
     &:after {
@@ -215,6 +218,7 @@
         }
         p {
           display: inline;
+          font-style: italic;
         }
       }
     }
