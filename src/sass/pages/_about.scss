@@ -10,6 +10,9 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  @include media-max-width(500) {
+    padding: 5% 8%;
+  }
 
   &__content {
     height: 100%;
@@ -93,6 +96,7 @@
     }
 
     &--content {
+      margin-bottom: 15px;
       ul {
         border: 3px solid $secondary_clr;
         padding: 10px 20px;
@@ -104,6 +108,9 @@
   &__section {
     width: 65%;
     padding: 15px;
+    @include media-max-width(500) {
+      padding: 0;
+    }
     @include media-max-width(750) {
       width: 100%;
     }
