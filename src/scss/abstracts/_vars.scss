@@ -1,0 +1,33 @@
+$mainFont: 'Roboto', sans-serif;
+$secondaryFont: 'Gilroy', cursive;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic');
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai');
+
+$pickled_bluewood: #253746;
+$jungle_green: #27a096;
+$eminence: #6e2880;
+$fire-bush: #df9034;
+$san-felix: #216a0c;
+
+$primary_clr: $pickled_bluewood;
+$secondary_clr: $jungle_green;
+$tertiary_clr: $eminence;
+$h_clr: $fire-bush;
+$link_clr: $san-felix;
+
+$show-image: true;
+$background-opacity: 0.8;
+$home-image: url(./assets/images/success-bkg-min.jpg);
+$about-image: url(./assets/images/about-underconstruction-min.jpg);
+$contact-image: url(./assets/images/contact-bg-min.jpg);
+$work-image: url(./assets/images/bg-min.jpg);
+
+$fwNormal: 400;
+$fwBold: 700;
+
+$min_vw: 320px;
+$max_vw: 2560px;
+$min_font: 12px;
+$max_font: 50px;
