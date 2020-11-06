@@ -28,9 +28,9 @@
 @mixin background($image) {
 	@if $show-image {
 		background: #{$image};
-		background-attachment: fixed;
-		background-size: cover;
-		background-position: center;
+		background-attachment: fixed !important;
+		background-size: cover !important;
+		background-position: center !important;
 
 		&:before {
 			content: '';
