@@ -119,7 +119,8 @@
 		input,
 		textarea {
 			border: 2px solid $secondary_clr;
-			background-color: #ffffff;
+			background-color: $primary_clr;
+			color: $secondary_clr;
 		}
 
 		/* Change autocomplete styles in WebKit */

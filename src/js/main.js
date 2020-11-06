@@ -74,6 +74,8 @@ $('.portfolio-menu ul li').click(function () {
 	return false;
 });
 
-function goBack() {
-	window.history.back();
-}
+document.addEventListener('DOMContentLoaded', function () {
+	function goBack() {
+		window.history.back();
+	}
+});
