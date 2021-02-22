@@ -27,17 +27,28 @@ main {
 			left: 5%;
 			width: 17.7%;
 			text-align: left;
+			transition: 0.5s ease-in-out all;
 			@include media-max-width(800) {
 				width: 15%;
 			}
 			@include media-max-width(600) {
 				display: flex;
-				line-height: 20px;
+				line-height: 15px;
 				width: 100%;
 				flex-wrap: wrap;
 				left: 0;
 				justify-content: space-between;
 				min-height: 60px;
+				z-index: 40;
+				background-color: rgba($color: $primary_clr, $alpha: 0.6);
+
+				.hidden-hr {
+					display: none;
+				}
+			}
+
+			&--sticky {
+				top: 50px;
 			}
 
 			hr {

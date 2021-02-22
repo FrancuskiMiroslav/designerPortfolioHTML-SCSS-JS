@@ -69,8 +69,10 @@ $(document).ready(function () {
 $(window).on('scroll', function () {
 	if ($(window).scrollTop()) {
 		$('.nav-top').addClass('nav-top--sticky');
+		$('.portfolio-menu__list').addClass('portfolio-menu__list--sticky');
 	} else {
 		$('.nav-top').removeClass('nav-top--sticky');
+		$('.portfolio-menu__list').removeClass('portfolio-menu__list--sticky');
 	}
 });
 
