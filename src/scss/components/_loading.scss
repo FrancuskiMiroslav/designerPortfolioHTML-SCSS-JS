@@ -3,15 +3,32 @@
 	top: 0;
 	width: 100%;
 	height: 100vh;
-	background: #000000;
+	background: $primary-clr;
 	z-index: 5000;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: 0.4s ease-in-out all;
+	transition: 2s ease-in-out all;
+
+	img {
+		animation: rotation 5s infinite;
+		width: 100px;
+	}
 
 	&.preload-finished {
 		opacity: 0;
 		pointer-events: none;
+	}
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate3d(1, 1, 1, 2turn);
+	}
+	50% {
+		transform: rotate3d(4, 4, 4, 4turn);
+	}
+	100% {
+		transform: rotate3d(8, 8, 8, 6turn);
 	}
 }

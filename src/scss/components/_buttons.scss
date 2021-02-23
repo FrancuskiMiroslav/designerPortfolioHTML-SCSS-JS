@@ -50,3 +50,23 @@
 		}
 	}
 }
+
+.scrollTopBtn {
+	position: fixed;
+	font-size: 18px;
+	height: 30px;
+	width: 30px;
+	padding: 4px;
+	right: 0px;
+	bottom: 8px;
+	z-index: 5000;
+	border-radius: 50% 50% 0 0;
+	opacity: 0;
+	transition: 0.5s ease all;
+	transform: rotate(-90deg);
+	background-color: $secondary-clr;
+
+	&:hover {
+		background-color: $h_clr;
+	}
+}

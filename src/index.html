@@ -26,11 +26,22 @@
 
 	<body id="work-img">
 		<div class="preload">
-			<img src="./assets/images/preloader.gif" alt="loading-image" />
+			<img
+				src="./assets/images/50x50.png"
+				alt="loading-image logo graphic design"
+			/>
 		</div>
 
+		<button class="button scrollTopBtn" id="btnScrollToTop">
+			<img
+				src="./assets/images/arrowRight.png"
+				alt="arrow pointing to the top"
+				class="scrollToTopImg"
+			/>
+		</button>
+
 		<header>
-			<div class="nav-top">
+			<div class="nav-top" id="top-nav">
 				<div class="menu-btn">
 					<div class="menu-btn__burger"></div>
 				</div>
@@ -51,7 +62,7 @@
 		</header>
 		<main>
 			<aside class="portfolio-menu">
-				<ul class="portfolio-menu__list">
+				<ul class="portfolio-menu__list" id="portfolio-menu__list">
 					<li class="active" data-filter="*">All</li>
 					<li class="hidden-hr">
 						<hr />

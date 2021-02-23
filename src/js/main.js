@@ -66,13 +66,18 @@ $(document).ready(function () {
 	});
 });
 
-$(window).on('scroll', function () {
-	if ($(window).scrollTop()) {
-		$('.nav-top').addClass('nav-top--sticky');
-		$('.portfolio-menu__list').addClass('portfolio-menu__list--sticky');
+const topNav = document.getElementById('top-nav');
+const topNavList = document.getElementById('portfolio-menu__list');
+
+window.addEventListener('scroll', (e) => {
+	if (document.documentElement.scrollTop > 0) {
+		topNav.classList.add('nav-top--sticky');
+		topNavList.classList.add('portfolio-menu__list--sticky');
+		btnScrollToTop.style.opacity = 1;
 	} else {
-		$('.nav-top').removeClass('nav-top--sticky');
-		$('.portfolio-menu__list').removeClass('portfolio-menu__list--sticky');
+		topNav.classList.remove('nav-top--sticky');
+		topNavList.classList.remove('portfolio-menu__list--sticky');
+		btnScrollToTop.style.opacity = 0;
 	}
 });
 
