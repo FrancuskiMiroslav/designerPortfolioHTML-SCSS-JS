@@ -1,233 +1,233 @@
 #about-img {
-  @include background($about-image);
-  display: block;
-  height: fit-content;
+	@include background($about-image);
+	display: block;
+	height: fit-content;
 }
 
 .about {
-  padding: 5% 12%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  @include media-max-width(500) {
-    padding: 5% 8%;
-  }
+	padding: 5% 12%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	@include media-max-width(500) {
+		padding: 5% 8%;
+	}
 
-  &__content {
-    height: 100%;
-    width: 100%;
-    background-color: rgba($color: #000000, $alpha: 0.5);
-    display: flex;
-    position: relative;
-  }
+	&__content {
+		height: 100%;
+		width: 100%;
+		background-color: rgba($color: #000000, $alpha: 0.5);
+		display: flex;
+		position: relative;
+	}
 
-  &__heading {
-    top: -0.6em;
-    position: absolute;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 48px;
-    color: $secondary_clr;
-    @include media-max-width(500) {
-      font-size: 32px;
-    }
+	&__heading {
+		top: -0.6em;
+		position: absolute;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 48px;
+		color: $secondary_clr;
+		@include media-max-width(500) {
+			font-size: 32px;
+		}
 
-    &:before,
-    &:after {
-      content: "";
-      border-top: 4px solid;
-      margin: 0 20px 0 0;
-      flex: 1 0 20px;
-      animation-name: sideLine;
-      animation-duration: 4s;
-      color: $secondary_clr;
-    }
+		&:before,
+		&:after {
+			content: '';
+			border-top: 4px solid;
+			margin: 0 20px 0 0;
+			flex: 1 0 20px;
+			animation-name: sideLine;
+			animation-duration: 4s;
+			color: $secondary_clr;
+		}
 
-    &:after {
-      margin: 0 0 0 20px;
-    }
+		&:after {
+			margin: 0 0 0 20px;
+		}
 
-    @keyframes sideLine {
-      0% {
-        flex: 0;
-      }
+		@keyframes sideLine {
+			0% {
+				flex: 0;
+			}
 
-      100% {
-        flex: 1 0 20px;
-      }
-    }
-  }
+			100% {
+				flex: 1 0 20px;
+			}
+		}
+	}
 
-  &__boxes {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    justify-content: space-between;
+	&__boxes {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		padding: 20px;
+		justify-content: space-between;
 
-    @include media-max-width(750) {
-      flex-direction: column;
-    }
-  }
+		@include media-max-width(750) {
+			flex-direction: column;
+		}
+	}
 
-  &__aside {
-    max-width: 330px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    @include media-max-width(750) {
-      max-width: 100%;
-      text-align: center;
-    }
+	&__aside {
+		max-width: 330px;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		@include media-max-width(750) {
+			max-width: 100%;
+			text-align: center;
+		}
 
-    &--img {
-      flex: 1 1 auto;
-      margin-bottom: 15px;
-      img {
-        max-width: 100%;
-        max-height: 100%;
-        filter: drop-shadow(2px 4px 6px black) brightness(0.5);
-      }
-    }
+		&--img {
+			flex: 1 1 auto;
+			margin-bottom: 15px;
+			img {
+				max-width: 100%;
+				max-height: 100%;
+				filter: drop-shadow(2px 4px 6px black) brightness(0.5);
+			}
+		}
 
-    &--content {
-      margin-bottom: 15px;
-      ul {
-        border: 3px solid $secondary_clr;
-        padding: 10px 20px;
-        list-style-type: square;
-      }
-    }
-  }
+		&--content {
+			margin-bottom: 15px;
+			ul {
+				border: 3px solid $secondary_clr;
+				padding: 10px 20px;
+				list-style-type: square;
+			}
+		}
+	}
 
-  &__section {
-    width: 65%;
-    padding: 15px;
-    @include media-max-width(500) {
-      padding: 0;
-    }
-    @include media-max-width(750) {
-      width: 100%;
-    }
+	&__section {
+		width: 65%;
+		padding: 15px;
+		@include media-max-width(500) {
+			padding: 0;
+		}
+		@include media-max-width(750) {
+			width: 100%;
+		}
 
-    &--top {
-      margin-bottom: 15px;
+		&--top {
+			margin-bottom: 15px;
 
-      @include media-max-width(750) {
-        text-align: center;
-      }
-      h2 {
-        color: darken($color: $secondary_clr, $amount: 5);
-        margin-bottom: 15px;
-      }
+			@include media-max-width(750) {
+				text-align: center;
+			}
+			h2 {
+				color: darken($color: $secondary_clr, $amount: 5);
+				margin-bottom: 15px;
+			}
 
-      h3 {
-        color: darken($color: $secondary_clr, $amount: 8);
-        margin-bottom: 10px;
-      }
-    }
+			h3 {
+				color: darken($color: $secondary_clr, $amount: 8);
+				margin-bottom: 10px;
+			}
+		}
 
-    &--middle {
-      h2 {
-        color: darken($color: $secondary_clr, $amount: 5);
-        border-bottom: 5px solid darken($color: $secondary_clr, $amount: 5);
-      }
-      .skillbar {
-        position: relative;
-        display: inline-block;
-        margin: 15px 0;
-        width: 100%;
-        background: rgba(lighten($color: $secondary_clr, $amount: 4), 0.2);
-        height: 35px;
-        border-radius: 3px;
-        width: 100%;
-      }
+		&--middle {
+			h2 {
+				color: darken($color: $secondary_clr, $amount: 5);
+				border-bottom: 5px solid darken($color: $secondary_clr, $amount: 5);
+			}
+			.skillbar {
+				position: relative;
+				display: inline-block;
+				margin: 15px 0;
+				width: 100%;
+				background: rgba(lighten($color: $secondary_clr, $amount: 4), 0.2);
+				height: 35px;
+				border-radius: 3px;
+				width: 100%;
+			}
 
-      .skillbar-title {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 110px;
-        font-weight: bold;
-        font-size: 13px;
-        color: rgba(lighten($color: $secondary_clr, $amount: 4), 1);
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
-        background: rgba($primary_clr, 0.6);
-        padding: 0 20px;
-        height: 35px;
-        line-height: 35px;
-      }
+			.skillbar-title {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 110px;
+				font-weight: $fwBold;
+				font-size: 13px;
+				color: rgba(lighten($color: $secondary_clr, $amount: 4), 1);
+				border-top-left-radius: 3px;
+				border-bottom-left-radius: 3px;
+				background: rgba($primary_clr, 0.6);
+				padding: 0 20px;
+				height: 35px;
+				line-height: 35px;
+			}
 
-      .skillbar-bar {
-        height: 35px;
-        width: 0px;
-        background: darken($color: $secondary_clr, $amount: 4);
-        border-radius: 3px;
-        display: inline-block;
-      }
+			.skillbar-bar {
+				height: 35px;
+				width: 0px;
+				background: darken($color: $secondary_clr, $amount: 4);
+				border-radius: 3px;
+				display: inline-block;
+			}
 
-      .skill-bar-percent {
-        position: absolute;
-        right: 10px;
-        top: 0;
-        font-size: 11px;
-        height: 35px;
-        line-height: 35px;
-        color: #ffffff;
-      }
-    }
+			.skill-bar-percent {
+				position: absolute;
+				right: 10px;
+				top: 0;
+				font-size: 11px;
+				height: 35px;
+				line-height: 35px;
+				color: #ffffff;
+			}
+		}
 
-    &--bottom {
-      h2 {
-        color: darken($color: $secondary_clr, $amount: 5);
-        border-bottom: 5px solid darken($color: $secondary_clr, $amount: 5);
-        margin-bottom: 15px;
-      }
+		&--bottom {
+			h2 {
+				color: darken($color: $secondary_clr, $amount: 5);
+				border-bottom: 5px solid darken($color: $secondary_clr, $amount: 5);
+				margin-bottom: 15px;
+			}
 
-      span {
-        font-size: 30px;
-        color: $secondary_clr;
-        vertical-align: middle;
-      }
+			span {
+				font-size: 30px;
+				color: $secondary_clr;
+				vertical-align: middle;
+			}
 
-      blockquote {
-        background: rgba(
-          darken($color: $secondary_clr, $amount: 5),
-          $alpha: 0.5
-        );
-        border-left: 10px solid $secondary_clr;
-        margin: 1.5em 0px;
-        padding: 0.5em 10px;
-        quotes: "\201C""\201D""\2018""\2019";
-        line-height: 50px;
-        &:before {
-          color: $secondary_clr;
-          content: open-quote;
-          font-size: 4em;
-          line-height: 0.4em;
-          margin-right: 0.15em;
-          vertical-align: -0.4em;
-        }
+			blockquote {
+				background: rgba(
+					darken($color: $secondary_clr, $amount: 5),
+					$alpha: 0.5
+				);
+				border-left: 10px solid $secondary_clr;
+				margin: 1.5em 0px;
+				padding: 0.5em 10px;
+				quotes: '\201C''\201D''\2018''\2019';
+				line-height: 50px;
+				&:before {
+					color: $secondary_clr;
+					content: open-quote;
+					font-size: 4em;
+					line-height: 0.4em;
+					margin-right: 0.15em;
+					vertical-align: -0.4em;
+				}
 
-        &:after {
-          color: $secondary_clr;
-          content: close-quote;
-          font-size: 4em;
-          line-height: 0.6em;
-          margin-left: 0.15em;
-          vertical-align: -0.4em;
-        }
-        p {
-          display: inline;
-          font-style: italic;
-        }
-      }
-    }
-  }
+				&:after {
+					color: $secondary_clr;
+					content: close-quote;
+					font-size: 4em;
+					line-height: 0.6em;
+					margin-left: 0.15em;
+					vertical-align: -0.4em;
+				}
+				p {
+					display: inline;
+					font-style: italic;
+				}
+			}
+		}
+	}
 }
