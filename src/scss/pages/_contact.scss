@@ -139,9 +139,17 @@
 			transition: background-color 5s ease-in-out 0s;
 		}
 
-		i.fa-check-circle {
+		i.check-circle {
 			visibility: visible;
 			color: $secondary_clr;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			svg {
+				max-width: 20px;
+				width: 100%;
+			}
 		}
 	}
 
@@ -155,9 +163,14 @@
 			}
 		}
 
-		i.fa-exclamation-circle {
+		i.exclamation-triangle {
 			visibility: visible;
 			color: $tertiary_clr;
+
+			svg {
+				max-width: 20px;
+				width: 100%;
+			}
 		}
 
 		small {

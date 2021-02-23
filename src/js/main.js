@@ -72,11 +72,16 @@ const topNavList = document.getElementById('portfolio-menu__list');
 window.addEventListener('scroll', (e) => {
 	if (document.documentElement.scrollTop > 0) {
 		topNav.classList.add('nav-top--sticky');
-		topNavList.classList.add('portfolio-menu__list--sticky');
+		if (topNavList) {
+			topNavList.classList.add('portfolio-menu__list--sticky');
+		}
+
 		btnScrollToTop.style.opacity = 1;
 	} else {
 		topNav.classList.remove('nav-top--sticky');
-		topNavList.classList.remove('portfolio-menu__list--sticky');
+		if (topNavList) {
+			topNavList.classList.remove('portfolio-menu__list--sticky');
+		}
 		btnScrollToTop.style.opacity = 0;
 	}
 });
