@@ -16,16 +16,33 @@ document.addEventListener('DOMContentLoaded', function () {
 			});
 		});
 	}
-});
 
-$(document).ready(function () {
-	$('.menu-btn').on('click', function () {
-		$('nav ul').toggleClass('showing');
+	window.addEventListener('scroll', (e) => {
+		if (document.documentElement.scrollTop > 0) {
+			topNav.classList.add('nav-top--sticky');
+			if (topNavList) {
+				topNavList.classList.add('portfolio-menu__list--sticky');
+			}
+
+			btnScrollToTop.style.opacity = 1;
+		} else {
+			topNav.classList.remove('nav-top--sticky');
+			if (topNavList) {
+				topNavList.classList.remove('portfolio-menu__list--sticky');
+			}
+			btnScrollToTop.style.opacity = 0;
+		}
 	});
 
+	const topNav = document.getElementById('top-nav');
+	const topNavList = document.getElementById('portfolio-menu__list');
+	const navUl = document.getElementById('nav-ul');
 	const menuBtn = document.querySelector('.menu-btn');
 	let menuOpen = false;
+
 	menuBtn.addEventListener('click', () => {
+		navUl.classList.toggle('showing');
+
 		if (!menuOpen) {
 			menuBtn.classList.add('open');
 			menuOpen = true;
@@ -34,74 +51,4 @@ $(document).ready(function () {
 			menuOpen = false;
 		}
 	});
-
-	// skill bar ABOUT PAGE
-	$('.skillbar').skillBars({
-		// number start
-		from: 0,
-
-		// number end
-		to: false,
-
-		// animation speed
-		speed: 3000,
-
-		// how often the element should be up<a href="https://www.jqueryscript.net/time-clock/">date</a>d
-		interval: 100,
-
-		// the number of decimal places to show
-		decimals: 0,
-
-		// callback method for every time the element is updated,
-		onUpdate: null,
-
-		// callback method for when the element finishes updating
-		onComplete: null,
-
-		// CSS classes
-		classes: {
-			skillBarBar: '.skillbar-bar',
-			skillBarPercent: '.skill-bar-percent',
-		},
-	});
-});
-
-const topNav = document.getElementById('top-nav');
-const topNavList = document.getElementById('portfolio-menu__list');
-
-window.addEventListener('scroll', (e) => {
-	if (document.documentElement.scrollTop > 0) {
-		topNav.classList.add('nav-top--sticky');
-		if (topNavList) {
-			topNavList.classList.add('portfolio-menu__list--sticky');
-		}
-
-		btnScrollToTop.style.opacity = 1;
-	} else {
-		topNav.classList.remove('nav-top--sticky');
-		if (topNavList) {
-			topNavList.classList.remove('portfolio-menu__list--sticky');
-		}
-		btnScrollToTop.style.opacity = 0;
-	}
-});
-
-$(document).on('click', '.nav ul li a', function () {
-	$(this).addClass('active').siblings().removeClass('active');
-});
-
-$('.portfolio-item').isotope({
-	itemSelector: '.item',
-	layoutMode: 'fitRows',
-});
-
-$('.portfolio-menu ul li').click(function () {
-	$('.portfolio-menu ul li').removeClass('active');
-	$(this).addClass('active');
-
-	var selector = $(this).attr('data-filter');
-	$('.portfolio-item').isotope({
-		filter: selector,
-	});
-	return false;
 });

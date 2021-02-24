@@ -1,5 +1,7 @@
 #work-img {
 	@include background($work-image);
+	display: flex;
+	flex-direction: column;
 }
 
 main {
