@@ -439,6 +439,136 @@
 			"imageDescription": "Flayer for fast food restaurant \"Buja planet\"",
 			"imageMob": "./assets/images/projects/fastfoodflayer-min.jpg",
 			"imageDesk": "./assets/images/projects/fastfoodflayer.jpg"
+		},
+		{
+			"id": 45,
+			"title": "Logo designed for food delivery („Colorado“)",
+			"description": "Logo for food delivery \"Colorado\"",
+			"design": ["logo"],
+			"colorsUsed": "one",
+			"imageDescription": "Logo („Colorado“)",
+			"imageMob": "./assets/images/projects/colorado-min.jpg",
+			"imageDesk": "./assets/images/projects/colorado.jpg"
+		},
+		{
+			"id": 46,
+			"title": "Logo („Motheralnd“)",
+			"description": "Logo for tanning salon. The desing of main figure of women is vectorized.",
+			"design": ["logo"],
+			"colorsUsed": "one",
+			"imageDescription": "Logo („Motheralnd“)",
+			"imageMob": "./assets/images/projects/motherland-min.jpg",
+			"imageDesk": "./assets/images/projects/motherland.jpg"
+		},
+		{
+			"id": 47,
+			"title": "Instagram content („Motheralnd tanning“)",
+			"description": "“Content created for the instagram profile \"Motherland\" salon.",
+			"design": ["label"],
+			"colorsUsed": "one",
+			"imageDescription": "Instagram contet („Motherland“)",
+			"imageMob": "./assets/images/projects/motheralndInstagram-min.jpg",
+			"imageDesk": "./assets/images/projects/motheralndInstagram.jpg"
+		},
+		{
+			"id": 48,
+			"title": "Illustration \"Drunk fruit\"",
+			"description": "Illustration created in Photoshop for the brandy label.",
+			"design": ["photoshop"],
+			"colorsUsed": "one",
+			"imageDescription": "Illustration for brandy",
+			"imageMob": "./assets/images/projects/pijaneKruske-min.jpg",
+			"imageDesk": "./assets/images/projects/pijaneKruske.jpg"
+		},
+		{
+			"id": 49,
+			"title": "Brandy label („Durković“)",
+			"description": "Labels of brandy for different types of fruit.",
+			"design": ["label"],
+			"colorsUsed": "two",
+			"imageDescription": "Brandy label („Durković“)",
+			"imageMob": "./assets/images/projects/rakija-min.jpg",
+			"imageDesk": "./assets/images/projects/rakija.jpg"
+		},
+		{
+			"id": 50,
+			"title": "Pizzeria logo („Manila“)",
+			"description": "Pizzeria logo made in the commissioned colors.",
+			"design": ["logo"],
+			"colorsUsed": "two",
+			"imageDescription": "Pizzeria logo („Manila“)",
+			"imageMob": "./assets/images/projects/manila-min.jpg",
+			"imageDesk": "./assets/images/projects/manila.jpg"
+		},
+		{
+			"id": 51,
+			"title": "Glass stickers („Manila“)",
+			"description": "The illustrations of the redesign, that is displayed on front window were inspired by Pop art style .",
+			"design": ["photoshop", "prints"],
+			"colorsUsed": "one",
+			"imageDescription": "Glass stickers („Manila“)",
+			"imageMob": "./assets/images/projects/beforeAfter-min.jpg",
+			"imageDesk": "./assets/images/projects/beforeAfter.jpg"
+		},
+		{
+			"id": 52,
+			"title": "Logo redesign („Molero“)",
+			"description": "Redesign logo for painting works.",
+			"design": ["logo"],
+			"colorsUsed": "two",
+			"imageDescription": "Logo redesign („Molero“)",
+			"imageMob": "./assets/images/projects/molero-min.jpg",
+			"imageDesk": "./assets/images/projects/molero.jpg"
+		},
+		{
+			"id": 53,
+			"title": "Logo for moldings („Bovira“)",
+			"description": "Logo created for a company that manufactures moldings and decorative elements.",
+			"design": ["logo"],
+			"colorsUsed": "one",
+			"imageDescription": "Logo for moldings („Bovira“)",
+			"imageMob": "./assets/images/projects/boviraLogo-min.jpg",
+			"imageDesk": "./assets/images/projects/boviraLogo.jpg"
+		},
+		{
+			"id": 54,
+			"title": "Catalog cover („Bovira“)",
+			"description": "I did desing in photoshop and Illustator, and i also include all moldings on 3D Maz Studio.",
+			"design": ["covers"],
+			"colorsUsed": "more",
+			"imageDescription": "Catalog cover („Bovira“)",
+			"imageMob": "./assets/images/projects/katalog-min.jpg",
+			"imageDesk": "./assets/images/projects/katalog.jpg"
+		},
+		{
+			"id": 55,
+			"title": "Page of catalog („Bovira“)",
+			"description": "This the example the one of the pages from the catalog.",
+			"design": ["covers"],
+			"colorsUsed": "more",
+			"imageDescription": "Page of catalog („Bovira“)",
+			"imageMob": "./assets/images/projects/str1-min.jpg",
+			"imageDesk": "./assets/images/projects/str1.jpg"
+		},
+		{
+			"id": 56,
+			"title": "Digital Portrait in Photoshop",
+			"description": "Digital portrait created with brushes in photoshop.",
+			"design": ["photoshop"],
+			"colorsUsed": "two",
+			"imageDescription": "Digital Portrait in Photoshop",
+			"imageMob": "./assets/images/projects/digital-min.jpg",
+			"imageDesk": "./assets/images/projects/digital.jpg"
+		},
+		{
+			"id": 57,
+			"title": "Animal shelter logo („Good Hope“)",
+			"description": "Logo created for the animal shelter, using only limited color palette from site.",
+			"design": ["logo"],
+			"colorsUsed": "one",
+			"imageDescription": "Animal shelter logo („Good Hope“)",
+			"imageMob": "./assets/images/projects/azil-min.jpg",
+			"imageDesk": "./assets/images/projects/azil.jpg"
 		}
 	]
 }

@@ -32,5 +32,6 @@
 		"gulp-terser": "^1.2.0",
 		"webpack-stream": "^5.2.1",
 		"gh-pages": "^2.2.0"
-	}
+	},
+	"dependencies": {}
 }
