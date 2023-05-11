@@ -597,8 +597,8 @@
 			],
 			"colorsUsed": "two",
 			"imageDescription": "Logo Redesing",
-			"imageMob": "./assets/images/projects/digitals redesing-min.jpg",
-			"imageDesk": "./assets/images/projects/digitals redesing.jpg"
+			"imageMob": "./assets/images/projects/digitals-redesing-min.jpg",
+			"imageDesk": "./assets/images/projects/digitals-redesing.jpg"
 		},
 		{
 			"id": 49,
@@ -609,8 +609,8 @@
 			],
 			"colorsUsed": "two",
 			"imageDescription": "Branding",
-			"imageMob": "./assets/images/projects/bredndiranje vozila-min.jpg",
-			"imageDesk": "./assets/images/projects/bredndiranje vozila.jpg"
+			"imageMob": "./assets/images/projects/bredndiranje-vozila-min.jpg",
+			"imageDesk": "./assets/images/projects/bredndiranje-vozila.jpg"
 		},
 		{
 			"id": 50,
@@ -621,8 +621,8 @@
 			],
 			"colorsUsed": "two",
 			"imageDescription": "Advertising solution",
-			"imageMob": "./assets/images/projects/Oglasno resenje Lepota i zdravlje-min.jpg",
-			"imageDesk": "./assets/images/projects/Oglasno resenje Lepota i zdravlje.jpg"
+			"imageMob": "./assets/images/projects/Oglasno-resenje-Lepota-i-zdravlje-min.jpg",
+			"imageDesk": "./assets/images/projects/Oglasno-resenje-Lepota-i-zdravlje.jpg"
 		},
 		{
 			"id": 51,
@@ -633,8 +633,8 @@
 			],
 			"colorsUsed": "two",
 			"imageDescription": "Brandy label",
-			"imageMob": "./assets/images/projects/rakija etiketa-min.jpg",
-			"imageDesk": "./assets/images/projects/rakija etiketa.jpg"
+			"imageMob": "./assets/images/projects/rakija-etiketa-min.jpg",
+			"imageDesk": "./assets/images/projects/rakija-etiketa.jpg"
 		},
 		{
 			"id": 52,
