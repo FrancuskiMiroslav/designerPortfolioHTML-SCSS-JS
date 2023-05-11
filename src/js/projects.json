@@ -577,19 +577,7 @@
 			"imageDesk": "./assets/images/projects/azil.jpg"
 		},
 		{
-			"id": 47,
-			"title": "Digital Portrait in Photoshop",
-			"description": "Digital portrait created with brushes in photoshop.",
-			"design": [
-				"graphic design"
-			],
-			"colorsUsed": "two",
-			"imageDescription": "Digital Portrait in Photoshop",
-			"imageMob": "./assets/images/projects/digital-min.jpg",
-			"imageDesk": "./assets/images/projects/digital.jpg"
-		},
-		{
-			"id": 48,
+			"id": 49,
 			"title": "Digitas Logo REDESIGN",
 			"description": "Creatine agency trademark redesign.",
 			"design": [
@@ -601,7 +589,7 @@
 			"imageDesk": "./assets/images/projects/digitals-redesing.jpg"
 		},
 		{
-			"id": 49,
+			"id": 50,
 			"title": "Branding",
 			"description": "Farm vehicle branding.",
 			"design": [
@@ -613,7 +601,7 @@
 			"imageDesk": "./assets/images/projects/bredndiranje-vozila.jpg"
 		},
 		{
-			"id": 50,
+			"id": 51,
 			"title": "Advertising solution",
 			"description": "Advertising solution in the magazine 'Lepota i Zdravlje'.",
 			"design": [
@@ -625,7 +613,7 @@
 			"imageDesk": "./assets/images/projects/Oglasno-resenje-Lepota-i-zdravlje.jpg"
 		},
 		{
-			"id": 51,
+			"id": 52,
 			"title": "Brandy label",
 			"description": "Label for brandy for farming 'Kolarski'.",
 			"design": [
@@ -637,7 +625,7 @@
 			"imageDesk": "./assets/images/projects/rakija-etiketa.jpg"
 		},
 		{
-			"id": 52,
+			"id": 53,
 			"title": "Shop branding",
 			"description": "Shop branding 'Džidžabidžarnica'.",
 			"design": [
@@ -649,7 +637,7 @@
 			"imageDesk": "./assets/images/projects/dzidzabidzarnica.jpg"
 		},
 		{
-			"id": 53,
+			"id": 54,
 			"title": "Shop branding",
 			"description": "Shop branding 'motherland-branding'.",
 			"design": [
@@ -661,7 +649,7 @@
 			"imageDesk": "./assets/images/projects/motherland-branding.jpg"
 		},
 		{
-			"id": 54,
+			"id": 55,
 			"title": "Posts for social media",
 			"description": "Creation of posts for social networks, construction companies, including creative posts, animations, video.",
 			"design": [
@@ -673,7 +661,7 @@
 			"imageDesk": "./assets/images/projects/SG-social-media.jpg"
 		},
 		{
-			"id": 55,
+			"id": 56,
 			"title": "Site page design",
 			"description": "Site page design 'Les appuis le ring'.",
 			"design": [
@@ -685,7 +673,7 @@
 			"imageDesk": "./assets/images/projects/les-appuis-le-ring.jpg"
 		},
 		{
-			"id": 56,
+			"id": 57,
 			"title": "Site page design",
 			"description": "Site page design 'Concord'.",
 			"design": [
@@ -697,7 +685,7 @@
 			"imageDesk": "./assets/images/projects/concordsite.jpg"
 		},
 		{
-			"id": 57,
+			"id": 58,
 			"title": "Site page design",
 			"description": "Site page design 'Bistrica'.",
 			"design": [
@@ -709,7 +697,7 @@
 			"imageDesk": "./assets/images/projects/bistricasite.jpg"
 		},
 		{
-			"id": 58,
+			"id": 59,
 			"title": "Site page design",
 			"description": "Site page design 'Bistrica'.",
 			"design": [
