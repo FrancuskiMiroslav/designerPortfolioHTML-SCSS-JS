@@ -669,8 +669,8 @@
 			],
 			"colorsUsed": "two",
 			"imageDescription": "social media posts",
-			"imageMob": "./assets/images/projects/SG social mediamin.jpg",
-			"imageDesk": "./assets/images/projects/SG social media.jpg"
+			"imageMob": "./assets/images/projects/SG-social-media-min.jpg",
+			"imageDesk": "./assets/images/projects/SG-social-media.jpg"
 		},
 		{
 			"id": 55,
@@ -683,6 +683,42 @@
 			"imageDescription": "site desing",
 			"imageMob": "./assets/images/projects/les-appuis-le-ring-min.jpg",
 			"imageDesk": "./assets/images/projects/les-appuis-le-ring.jpg"
+		},
+		{
+			"id": 56,
+			"title": "Site page design",
+			"description": "Site page design 'Concord'.",
+			"design": [
+				"UI/UX"
+			],
+			"colorsUsed": "two",
+			"imageDescription": "site desing",
+			"imageMob": "./assets/images/projects/concordsite-min.jpg",
+			"imageDesk": "./assets/images/projects/concordsite.jpg"
+		},
+		{
+			"id": 57,
+			"title": "Site page design",
+			"description": "Site page design 'Bistrica'.",
+			"design": [
+				"UI/UX"
+			],
+			"colorsUsed": "two",
+			"imageDescription": "site desing",
+			"imageMob": "./assets/images/projects/bistricasite-min.jpg",
+			"imageDesk": "./assets/images/projects/bistricasite.jpg"
+		},
+		{
+			"id": 58,
+			"title": "Site page design",
+			"description": "Site page design 'Bistrica'.",
+			"design": [
+				"UI/UX"
+			],
+			"colorsUsed": "two",
+			"imageDescription": "site desing",
+			"imageMob": "./assets/images/projects/bistricasite2.jpg",
+			"imageDesk": "./assets/images/projects/bistricasite2.jpg"
 		}
 	]
 }
