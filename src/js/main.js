@@ -51,4 +51,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			menuOpen = false;
 		}
 	});
+
+	const year = document.getElementById('dynamic-year');
+
+	function currentYear() {
+		year.innerText = new Date().getFullYear();
+	}
+
+	currentYear();
 });
